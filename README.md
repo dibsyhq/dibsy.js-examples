@@ -23,8 +23,6 @@ This repository contains examples of different implementations of Dibsy.JS. Dibs
 
 ## Running locally
 
-In order to run the examples you need a webserver. Although its plain HTML, CSS and JavaScript Mollie Components needs a valid hostname (e.g. localhost or 127.0.0.1). For this README example we use the [serve](https://www.npmjs.com/package/serve) package but any other webserver should work just fine.
-
 1. Clone the repo
 
 ```bash
