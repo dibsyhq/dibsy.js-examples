@@ -1,0 +1,127 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  background-color: #dce0e4;
+  margin: 0px;
+}
+
+.outer-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-container {
+  position: relative;
+  width: 600px;
+  border-radius: 16px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 12px #00112c33;
+}
+
+.inner-container form {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.dibsy-component {
+  background: #f5f8f5;
+  border-radius: 16px;
+  padding: 13px;
+}
+
+.dibsy-component.is-invalid {
+  border: 1px solid #ce0000;
+  transition: 0.3s border-color cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(206, 0, 0, 0.2);
+}
+
+.dibsy-component.is-valid {
+  transition: 0.3s border-color cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #25d482;
+}
+
+.dibsy-component.loading {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  position: relative;
+}
+
+.field-error {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #f42828;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-left: 11px;
+}
+
+button.submit-button {
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  background: #25d482;
+  padding: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: #159659;
+}
+
+button.submit-button:disabled {
+  background-color: #4aeb9f;
+  cursor: not-allowed;
+}
+
+.form-fields {
+  margin-bottom: 24px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group--expiry-date {
+  margin-right: 8px;
+}
+
+.form-group--verification-code {
+  margin-left: 8px;
+}
+
+.form-group--card-number {
+  margin-bottom: 8px;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -1202px 0;
+  }
+  100% {
+    background-position: 1202px 0;
+  }
+}

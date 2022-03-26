@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dibsy</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <form method="post" class="form" id="payForm">
+          <h1>Pay with Credit Card</h1>
+          <div class="form-fields">
+
+            <div class="row">
+              <div class="form-group form-group--card-number">
+                <div id="card-number"></div>
+                <div
+                  id="card-number-error"
+                  class="field-error"
+                  role="alert"
+                ></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group form-group--expiry-date">
+                <div id="expiry-date"></div>
+                <div
+                  id="expiry-date-error"
+                  class="field-error"
+                  role="alert"
+                ></div>
+              </div>
+
+              <div class="form-group form-group--verification-code">
+                <div id="verification-code"></div>
+                <div
+                  id="verification-code-error"
+                  class="field-error"
+                  role="alert"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <button id="submit-button" class="submit-button" type="submit">
+            Confirm Payment
+          </button>
+
+          <div id="form-error" class="field-error" role="alert"></div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.dibsy.one/js/dibsy-2.0.0.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
