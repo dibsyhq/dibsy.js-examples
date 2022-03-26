@@ -9,15 +9,15 @@ This repository contains examples of different implementations of Dibsy.JS. Dibs
 
 ## Examples
 
-- [Example 1](./example-1/): Basic example
+- [Example 1](./example-1/)
 
 <a href="./example-1/"><img src="./screenshots/dibsy.js-example-1.png" width="838px" alt="Example 1"/></a>
 
-- [Example 2](./example-2/): Floating labels
+- [Example 2](./example-2/)
 
 <a href="./example-2/"><img src="./screenshots/dibsy.js-example-2.png" width="838px" alt="Example 2"/></a>
 
-- [Example 3](./example-3/): Vertical layout
+- [Example 3](./example-3/)
 
 <a href="./example-3/"><img src="./screenshots/dibsy.js-example-3.png" width="838px" alt="Example 3"/></a>
 
